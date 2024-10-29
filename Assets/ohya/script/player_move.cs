@@ -41,6 +41,7 @@ public class player_move : MonoBehaviour
         {
             // ã•ûŒü‚É—Í‚ğ‰Á‚¦‚é–‚ÅƒWƒƒƒ“ƒv‚·‚é
             rbody2D.AddForce(Vector2.up * jumpheight);
+            isGrounded = false;
         }
     }
 

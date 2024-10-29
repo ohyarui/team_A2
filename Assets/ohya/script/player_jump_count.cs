@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class player_jump : MonoBehaviour
+public class player_jump_count: MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -21,14 +21,6 @@ public class player_jump : MonoBehaviour
         if(collision.gameObject.tag == "ground")
         {
             player_move.isGrounded = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "ground")
-        {
-            player_move.isGrounded = false;
         }
     }
 }
